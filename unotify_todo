@@ -1,0 +1,200 @@
+package unotifyd
+
+# config unotify
+#	option timer 5 # sekunde
+## dodaj jos reload
+# nazvati config fajl unotify bez d
+# vidjeti za hiden
+# "periodic":{"time":"Integer"} zamijeniti da bude "configure":{"periodic":"Integer"}
+# vidjeti sto je s list pozivom
+# u list dodati broadcast ili neko drugo smisleno ime koje bi imalo trenutnu funkcionalnost
+# to kada radis onda napravi ovako
+# if (!broadcast)
+#    return;
+# tu je onda kod za broadcast
+# dodati opciju kod watch za tilda
+# testirati kod vi editora
+# vidjeti da li mozes zakljuciti da je samo fajl za broj napravljen
+
+# config watch
+# 	option path '/etc/config/unotifyd'
+# 	option md5sum 'false'
+# 	option base64 'false'
+# 	option hiden 'false'
+# 	option access 'true'
+# 	option modify 'true'
+# 	option attrib 'true'
+# 	option close 'true'
+# 	option open 'true'
+# 	option move 'true'
+# 	option create 'true'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/etc/config/unotifyd'
+# 	option md5sum 'false'
+# 	option base64 'false'
+# 	option hiden 'false'
+# 	option access 'true'
+# 	option modify 'true'
+# 	option attrib 'true'
+# 	option close 'true'
+# 	option open 'true'
+# 	option move 'true'
+# 	option create 'true'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/home/mislav/tmp/test_dir_2'
+# 	option md5sum 'true'
+# 	option base64 'false'
+# 	option hiden 'true'
+# 	option access 'false'
+# 	option modify 'false'
+# 	option attrib 'false'
+# 	option close 'false'
+# 	option open 'false'
+# 	option move 'true'
+# 	option create 'false'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/home/mislav/tmp/test_dir_2/tmp'
+# 	option md5sum 'true'
+# 	option base64 'false'
+# 	option hiden 'true'
+# 	option access 'false'
+# 	option modify 'false'
+# 	option attrib 'false'
+# 	option close 'false'
+# 	option open 'false'
+# 	option move 'true'
+# 	option create 'false'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/etc/config/unotifyd'
+# 	option md5sum 'false'
+# 	option base64 'false'
+# 	option hiden 'false'
+# 	option access 'true'
+# 	option modify 'true'
+# 	option attrib 'true'
+# 	option close 'true'
+# 	option open 'true'
+# 	option move 'true'
+# 	option create 'true'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/home/mislav/tmp/test_dir_2'
+# 	option md5sum 'true'
+# 	option base64 'false'
+# 	option hiden 'true'
+# 	option access 'false'
+# 	option modify 'false'
+# 	option attrib 'false'
+# 	option close 'false'
+# 	option open 'false'
+# 	option move 'true'
+# 	option create 'false'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/etc/config/unotifyd'
+# 	option md5sum 'false'
+# 	option base64 'false'
+# 	option hiden 'false'
+# 	option access 'true'
+# 	option modify 'true'
+# 	option attrib 'true'
+# 	option close 'true'
+# 	option open 'true'
+# 	option move 'true'
+# 	option create 'true'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/home/mislav/tmp/test_dir_2'
+# 	option md5sum 'true'
+# 	option base64 'false'
+# 	option hiden 'true'
+# 	option access 'false'
+# 	option modify 'false'
+# 	option attrib 'false'
+# 	option close 'false'
+# 	option open 'false'
+# 	option move 'true'
+# 	option create 'false'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/home/mislav/tmp/test_dir_2/tmp'
+# 	option md5sum 'true'
+# 	option base64 'false'
+# 	option hiden 'true'
+# 	option access 'false'
+# 	option modify 'false'
+# 	option attrib 'false'
+# 	option close 'false'
+# 	option open 'false'
+# 	option move 'true'
+# 	option create 'false'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/etc/config/unotifyd'
+# 	option md5sum 'false'
+# 	option base64 'false'
+# 	option hiden 'false'
+# 	option access 'true'
+# 	option modify 'true'
+# 	option attrib 'true'
+# 	option close 'true'
+# 	option open 'true'
+# 	option move 'true'
+# 	option create 'true'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/home/mislav/tmp/test_dir_2'
+# 	option md5sum 'true'
+# 	option base64 'false'
+# 	option hiden 'true'
+# 	option access 'false'
+# 	option modify 'false'
+# 	option attrib 'false'
+# 	option close 'false'
+# 	option open 'false'
+# 	option move 'true'
+# 	option create 'false'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/home/mislav/tmp/test_dir_2/tmp'
+# 	option md5sum 'true'
+# 	option base64 'false'
+# 	option hiden 'true'
+# 	option access 'false'
+# 	option modify 'false'
+# 	option attrib 'false'
+# 	option close 'false'
+# 	option open 'false'
+# 	option move 'true'
+# 	option create 'false'
+# 	option delete 'true'
+# 
+# config unotifyd
+# 	option path '/home/mislav/tmp/test_dir'
+# 	option md5sum 'true'
+# 	option base64 'false'
+# 	option hiden 'true'
+# 	option access 'false'
+# 	option modify 'false'
+# 	option attrib 'false'
+# 	option close 'false'
+# 	option open 'false'
+# 	option move 'true'
+# 	option create 'false'
+# 	option delete 'true'
+# 

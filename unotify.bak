@@ -1,0 +1,33 @@
+package unotify
+
+config unotify
+	option timer '2'
+
+config watch
+	option path '/etc/config/unotify'
+	option md5sum 'false'
+	option base64 'false'
+	option hiden 'false'
+	option access 'true'
+	option modify 'true'
+	option attrib 'true'
+	option close 'true'
+	option open 'true'
+	option move 'true'
+	option create 'true'
+	option delete 'true'
+
+config watch
+	option path '/home/mislav/tmp/test_dir'
+	option md5sum 'true'
+	option base64 'true'
+	option hiden 'true'
+	option access 'false'
+	option modify 'true'
+	option attrib 'false'
+	option close 'false'
+	option open 'true'
+	option move 'false'
+	option create 'false'
+	option delete 'true'
+

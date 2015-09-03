@@ -1,0 +1,8 @@
+config miyagi 'main'
+	option addr '127.0.0.1'
+	option port '5556'
+	option token 'router1'
+	option uid '94:db:c9:b1:87:ff'
+	option keepalive '10'
+	option squash_interval '15'
+
